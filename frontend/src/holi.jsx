@@ -37,9 +37,9 @@ function SecondView() {
 
   const checkGameStatus = () => {
     if (playerWins >= 2) {
-      setTimeout(() => navigate("/winner"), 1000); // Navega a otra vista si el jugador gana 2 de 3 rondas
+      setTimeout(() => navigate("/FelizCumple"), 1000); // Navega a otra vista si el jugador gana 2 de 3 rondas
     } else if (computerWins >= 2) {
-      setTimeout(() => resetGame(), 1000); // Reinicia el juego si el computador gana 2 de 3 rondas
+      setTimeout(() => resetGame(), 0); // Reinicia el juego si el computador gana 2 de 3 rondas
     }
   };
 
@@ -54,8 +54,8 @@ function SecondView() {
   return (
     <div className="container">
       <div className="content">
-        <h2> Pero antes debes de ganar 2 de 3 en piedra papel o tijera</h2>
-        <h7>upsi, a veces se buguea un poquis</h7>
+        <h2> Para ver tu regalo, antes debes de ganar un 2 de 3 en piedra papel o tijera</h2>
+        <h7>(upsi si a veces se buguea un poquis)</h7>
         <div>
           <button onClick={() => playGame("piedra")}>Piedra</button>
           <button onClick={() => playGame("papel")}>Papel</button>
