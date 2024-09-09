@@ -1,15 +1,18 @@
-import React from 'react';
-import Banner from './components/banner.jsx';
-import Message from './components/message.jsx';
-import Gallery from './components/gallery.jsx';
+import React from "react";
+import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
+import Home from "./Home";
+import SecondView from "./holi";
 
-const App = () => {
+function App() {
   return (
-    <div className="app">
-      <Banner />
-      <Message />
-      <Gallery />
-    </div>
+    <Router>
+      <div className="app">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/SecondView" element={<SecondView />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
