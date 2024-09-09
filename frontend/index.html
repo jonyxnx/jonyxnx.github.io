@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="styles/styles.css">
+    <meta name="viewport" content="initial-scale=1.0" />
+    <title>Feliz cum</title>
+  </head>
+  <body style="justify-content: center;">
+    <div class="container">
+
+      <div class="content">
+        <div id="root"></div>
+
+        <script type="module" src="/src/main.jsx"></script>
+        <script>
+          const spans = document.querySelectorAll('span');
+          
+          spans.forEach(span => {
+            const randomValue = Math.floor(Math.random() * 50) + 1; // Números aleatorios entre 1 y 50
+            span.style.setProperty('--i', randomValue);
+          });
+        </script>
+      </div>
+    </div>
+  </body>
+</html>
