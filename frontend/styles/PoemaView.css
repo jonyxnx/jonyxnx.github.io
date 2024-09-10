@@ -17,9 +17,10 @@
     color: #555;
   }
   
-  .poema p {
-    font-size: 1.4rem;
+  .poema pre {
+    font-size: .9rem;
     font-style: italic;
+    text-align: left;
   }
   
 .center {
@@ -32,4 +33,11 @@
     text-align: center;
     justify-content: center;
     margin: 0 auto;
+}
+
+.poem-container {
+    white-space: pre-wrap;
+    justify-content: center;
+    text-align: center;
+    overflow-y: auto;
 }

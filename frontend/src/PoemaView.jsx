@@ -10,13 +10,13 @@ const PoemaView = ({ poemaSeleccionado }) => {
   }
 
   return (
-    <div className="container">
+    <div className="poem-container">
       <div className="poema">
         <h2>{poemaSeleccionado.titulo}</h2>
         <h4>{poemaSeleccionado.autor}</h4>
-        <p>{poemaSeleccionado.poema}</p>
+        <pre>{poemaSeleccionado.poema}</pre>
       </div>
-      <button onClick={() => navigate("/FelizCumple")}>Volver a la página principal</button>
+      <button onClick={() => navigate("/FelizCumple")}>Volver</button>
     </div>
   );
 };
