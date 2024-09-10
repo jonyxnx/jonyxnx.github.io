@@ -12,8 +12,8 @@ function Home() {
         </Link>
       </div>
       <img
-        src="public/images/felizcum.jpg" 
-        alt="bottom decoration"
+        src="/images/felizcum.jpg" 
+        alt="imagen-cute"
         className="below-button-image"
       />
     </div>
