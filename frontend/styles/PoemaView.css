@@ -5,6 +5,9 @@
     background-color: #ffcccb;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+    overflow-y: auto;
+    align-items: center;
   }
   
   .poema h2 {
@@ -39,5 +42,7 @@
     white-space: pre-wrap;
     justify-content: center;
     text-align: center;
-    overflow-y: auto;
+    max-height: calc(100vh - 200px);
+    overflow-y: auto; 
+    align-items: center;
 }

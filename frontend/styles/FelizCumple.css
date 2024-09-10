@@ -4,6 +4,7 @@
   align-items: center;
   height: 100vh; 
   background-color: pink;
+  flex-direction: column;
 }
 
 .message h1 {
